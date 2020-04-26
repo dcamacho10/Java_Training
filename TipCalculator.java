@@ -13,19 +13,35 @@ public class TipCalculator{
 
         Scanner valueInput = new Scanner(System.in);
 
-        System.out.print("Digite o total do consumo: ");
-        billAmount = valueInput.nextFloat();
+        try{
+            System.out.print("Digite o total do consumo: ");
+            billAmount = Float.parseFloat(valueInput.next());
 
-        System.out.print("Qual a porcentagem da gorgeta: ");
-        tipRate = valueInput.nextFloat();
+            if(billAmount < 0){
+                valueInput.close();
+                throw new Exception("O total tem que ser positivo.");
+            }
 
-        tip = Math.abs(billAmount*(tipRate/100));
-        total = tip + billAmount;
+            System.out.print("Qual a porcentagem da gorgeta: ");
+            tipRate = Float.parseFloat(valueInput.next());
 
-        System.out.println("O valor da gorgeta e: " +  tip);
-        System.out.println("O valor total a pagar e: " + total);
+            tip = Math.abs(billAmount*(tipRate/100));
+            total = tip + billAmount;
 
-        valueInput.close();
+            System.out.println("O valor da gorgeta e: " +  tip);
+            System.out.println("O valor total a pagar e: " + total);
+
+            valueInput.close();
+        }
+        catch(NumberFormatException numEx){
+            System.out.print("Quantidade errada, por favor digitar um numero valido.");
+        }
+        catch(Exception exc){
+            System.out.print(exc.getMessage());
+        }
+        // catch(NumberFormatException numFormatEx){
+        //     System.out.print(numFormatEx.getMessage());
+        // }
 
         //System.out.println(billAmount);
 
