@@ -12,6 +12,10 @@ import java.util.Scanner;
 
 public class Retirement_Calculator {
 
+
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int age;

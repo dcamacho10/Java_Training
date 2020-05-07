@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
 public class Counting_The_Num_Of_Char {
+
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

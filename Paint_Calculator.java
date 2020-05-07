@@ -13,6 +13,10 @@ Remember, you can’t buy a partial gallon of paint. You must round up to the ne
 
 public class Paint_Calculator {
 
+
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
 
         final float GALLONSFACTOR = (float)1/350;

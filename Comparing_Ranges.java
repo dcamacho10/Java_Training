@@ -18,6 +18,10 @@ The blood pressure is typically reported as systolic blood pressure/diastolic bl
 
 public class Comparing_Ranges {
 
+
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
 
     final int NUMOFARG = 2;

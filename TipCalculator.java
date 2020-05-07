@@ -4,6 +4,10 @@ import java.lang.System;
 public class TipCalculator{
 
 
+
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
 
         float billAmount = 0;

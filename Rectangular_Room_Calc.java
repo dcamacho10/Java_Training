@@ -10,6 +10,10 @@ public class Rectangular_Room_Calc {
         this.widthFeet = width;
     }
 
+
+    /**
+     * @return int
+     */
     public int squareFeet(){
         return this.lengthFeet * this.widthFeet;
     }

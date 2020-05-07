@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class Pizza_Party {
 
+
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int people;

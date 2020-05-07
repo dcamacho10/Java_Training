@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class Rectangular_Room_Area {
 
+
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
 
         final double conversionFactor = 0.09290304;
